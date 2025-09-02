@@ -10,11 +10,11 @@
 
 ### 🌟 *Where Data Meets Engineering Excellence* 🌟
 
-![GitHub Stars](https://img.shields.io/github/stars/yourusername/data-engineering?style=for-the-badge&logo=github&logoColor=white&color=gold)
-![GitHub Forks](https://img.shields.io/github/forks/yourusername/data-engineering?style=for-the-badge&logo=github&logoColor=white&color=blue)
-![GitHub Issues](https://img.shields.io/github/issues/yourusername/data-engineering?style=for-the-badge&logo=github&logoColor=white&color=red)
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr/yourusername/data-engineering?style=for-the-badge&logo=github&logoColor=white&color=green)
-![Contributors](https://img.shields.io/github/contributors/yourusername/data-engineering?style=for-the-badge&logo=github&logoColor=white&color=purple)
+![GitHub Stars](https://img.shields.io/github/stars/lzark200/data-engineering?style=for-the-badge&logo=github&logoColor=white&color=gold)
+![GitHub Forks](https://img.shields.io/github/forks/lzark200/data-engineering?style=for-the-badge&logo=github&logoColor=white&color=blue)
+![GitHub Issues](https://img.shields.io/github/issues/lzark200/data-engineering?style=for-the-badge&logo=github&logoColor=white&color=red)
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/lzark200/data-engineering?style=for-the-badge&logo=github&logoColor=white&color=green)
+![Contributors](https://img.shields.io/github/contributors/lzark200/data-engineering?style=for-the-badge&logo=github&logoColor=white&color=purple)
 
 </div>
 
@@ -27,15 +27,15 @@
 <table>
 <tr>
 <td align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" width="400"/>
+<img src="https://github-readme-stats.vercel.app/api?username=lzark200&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" width="400"/>
 </td>
 <td align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=tokyonight&hide_border=true" width="400"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=lzark200&theme=tokyonight&hide_border=true" width="400"/>
 </td>
 </tr>
 <tr>
 <td colspan="2" align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&theme=tokyonight&hide_border=true&layout=compact" width="800"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lzark200&theme=tokyonight&hide_border=true&layout=compact" width="800"/>
 </td>
 </tr>
 </table>
@@ -51,31 +51,31 @@
 </tr>
 <tr>
 <td>⭐ Stars</td>
-<td><img src="https://img.shields.io/github/stars/yourusername/data-engineering?style=flat&color=gold"/></td>
+<td><img src="https://img.shields.io/github/stars/lzark200/data-engineering?style=flat&color=gold"/></td>
 <td>1000+</td>
 <td>🚀 Growing</td>
 </tr>
 <tr>
 <td>🍴 Forks</td>
-<td><img src="https://img.shields.io/github/forks/yourusername/data-engineering?style=flat&color=blue"/></td>
+<td><img src="https://img.shields.io/github/forks/lzark200/data-engineering?style=flat&color=blue"/></td>
 <td>500+</td>
 <td>📈 Increasing</td>
 </tr>
 <tr>
 <td>👀 Views</td>
-<td><img src="https://komarev.com/ghpvc/?username=yourusername&color=brightgreen"/></td>
+<td><img src="https://komarev.com/ghpvc/?username=lzark200&color=brightgreen"/></td>
 <td>10K+</td>
 <td>🔥 Viral</td>
 </tr>
 <tr>
 <td>🐛 Issues</td>
-<td><img src="https://img.shields.io/github/issues/yourusername/data-engineering?style=flat&color=red"/></td>
+<td><img src="https://img.shields.io/github/issues/lzark200/data-engineering?style=flat&color=red"/></td>
 <td><5</td>
 <td>✅ Maintained</td>
 </tr>
 <tr>
 <td>🔄 PRs</td>
-<td><img src="https://img.shields.io/github/issues-pr/yourusername/data-engineering?style=flat&color=green"/></td>
+<td><img src="https://img.shields.io/github/issues-pr/lzark200/data-engineering?style=flat&color=green"/></td>
 <td>Active</td>
 <td>💪 Healthy</td>
 </tr>
