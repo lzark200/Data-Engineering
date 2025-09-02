@@ -9,7 +9,7 @@
 
 ### 🌟 *Master SQL with style and confidence!* 🌟
 
-<img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" width="400"/>
+<img src="https://github-readme-stats.vercel.app/api?username=lzark200&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" width="400"/>
 
 </div>
 
@@ -586,7 +586,7 @@ We love contributions! Feel free to:
 
 *May your queries be fast and your databases be forever optimized!* ⚡
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=radical&hide_border=true" alt="GitHub Streak" width="400"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=lzark200&theme=radical&hide_border=true" alt="GitHub Streak" width="400"/>
 
 ---
 
