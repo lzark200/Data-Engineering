@@ -1,128 +1,212 @@
-# 🌸✨ SQL Adventure Guide - Anime Style! ✨🌸
+# 🚀 SQL Mastery Guide - Complete Reference 🚀
 
 <div align="center">
 
-![SQL Anime Banner](https://img.shields.io/badge/SQL-Adventure%20Guide-ff69b4?style=for-the-badge&logo=mysql&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-Kawaii%20Code-ff1493?style=for-the-badge&logo=github&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Actively%20Learning-00ff7f?style=for-the-badge)
+![SQL Banner](https://img.shields.io/badge/SQL-Complete%20Guide-4A90E2?style=for-the-badge&logo=mysql&logoColor=white)
+![Version](https://img.shields.io/badge/Version-2.0-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)
+![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)
 
-### 🗾 *"Master the art of databases like a true SQL sensei!"* 🗾
+### 🌟 *Master SQL with style and confidence!* 🌟
+
+<img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" width="400"/>
 
 </div>
 
 ---
 
-## 📚 Table of Contents
-- [🌟 Introduction](#-introduction)
-- [🎌 Best Practices - The Way of SQL](#-best-practices---the-way-of-sql)
-- [🏯 Database Creation Jutsu](#-database-creation-jutsu)
-- [⚔️ Table Mastery Techniques](#️-table-mastery-techniques)
-- [🌈 Data Manipulation Magic](#-data-manipulation-magic)
-- [🎓 School Database Adventure](#-school-database-adventure)
-- [🌙 Summary & Final Words](#-summary--final-words)
+## 📋 Table of Contents
+
+<table>
+<tr>
+<td>
+
+- [🎯 **Quick Start**](#-quick-start)
+- [📜 **Best Practices**](#-best-practices)
+- [🏗️ **Database Operations**](#️-database-operations)
+- [📊 **Table Management**](#-table-management)
+
+</td>
+<td>
+
+- [💾 **Data Operations**](#-data-operations)
+- [🎓 **Practical Examples**](#-practical-examples)
+- [⚡ **Quick Reference**](#-quick-reference)
+- [🤝 **Contributing**](#-contributing)
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🌟 Introduction
+## 🎯 Quick Start
 
-> *Welcome, young padawan! Join us on this epic SQL journey where databases become your faithful companions and queries your magical spells!* ⚡
+> 💡 **New to SQL?** Follow this guide step by step and you'll be writing professional queries in no time!
 
-This repository contains beautifully structured SQL notes with examples, perfect for beginners who want to master database magic! 🎭
+<details open>
+<summary><b>🚀 Getting Started Checklist</b></summary>
+
+- [ ] Install MySQL/PostgreSQL
+- [ ] Set up your development environment
+- [ ] Create your first database
+- [ ] Follow the examples below
+- [ ] Practice with real data
+
+</details>
 
 ---
 
-## 🎌 Best Practices - The Way of SQL
+## 📜 Best Practices
 
-### 🌸 Rule #1: Sacred Naming Conventions
+<div align="center">
 
-Like choosing the perfect anime character name, your database names should be **meaningful** and **consistent**!
+### 🎨 **The Golden Rules of SQL** 🎨
+
+</div>
+
+<table>
+<thead>
+<tr>
+<th>🔑 Rule</th>
+<th>✅ Good Practice</th>
+<th>❌ Avoid This</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>📝 Naming</b></td>
+<td><code>LibraryDB</code>, <code>ECommerceDB</code></td>
+<td><code>DB1</code>, <code>table_abc</code></td>
+</tr>
+<tr>
+<td><b>🚫 Keywords</b></td>
+<td><code>mytabledb</code>, <code>user_data</code></td>
+<td><code>table</code>, <code>select</code></td>
+</tr>
+<tr>
+<td><b>📄 Case</b></td>
+<td><code>librarydb</code> (lowercase)</td>
+<td><code>LibraryDB</code> (mixed case)</td>
+</tr>
+</tbody>
+</table>
+
+### 🎪 **Naming Convention Examples**
+
+<div style="display: flex; justify-content: space-around;">
 
 ```sql
--- ✅ HERO LEVEL (Good Examples)
-CREATE DATABASE LibraryDB;
-CREATE DATABASE ECommerceDB;
-CREATE DATABASE StudentsTable;
-
--- ❌ VILLAIN LEVEL (Bad Examples)
-CREATE DATABASE DB1;
-CREATE DATABASE table_abc;
-CREATE DATABASE x1;
+-- ✨ EXCELLENT
+CREATE DATABASE user_management;
+CREATE DATABASE inventory_system;
+CREATE DATABASE customer_portal;
 ```
 
-> 💡 **Sensei's Tip:** A good name tells a story! Make it memorable like your favorite anime title! 🎌
-
-### 🗡️ Rule #2: Avoid the Forbidden Jutsu (Reserved Keywords)
-
-SQL has sacred words that are reserved for special powers! Don't use them as names:
-
 ```sql
--- ❌ CURSED TECHNIQUE (Invalid)
-CREATE DATABASE table;
+-- 💀 TERRIBLE
+CREATE DATABASE db;
+CREATE DATABASE table1;
 CREATE DATABASE select;
-
--- ✅ BLESSED TECHNIQUE (Valid)
-CREATE DATABASE mytabledb;
-CREATE DATABASE myselectdb;
 ```
 
-**Reserved Keywords to Avoid:** `CREATE`, `DELETE`, `TABLE`, `DATABASE`, `SELECT`, `INSERT`, `UPDATE`, `WHERE`
+</div>
 
-### 🌙 Rule #3: The Lowercase Moon Ritual
-
-MySQL can be tricky like a shape-shifting yokai! It's case-insensitive on Windows but case-sensitive on Unix/Linux.
-
-```sql
--- ✅ CONSISTENT MAGIC (Always works)
-CREATE DATABASE librarydb;
-USE librarydb;
-
--- ❌ UNSTABLE MAGIC (Might fail on Unix)
-CREATE DATABASE LibraryDB;
-USE librarydb; -- This might not find the database!
-```
+> 🌟 **Pro Tip:** Consistent naming makes your code readable and maintainable. Think of it as creating a masterpiece!
 
 ---
 
-## 🏯 Database Creation Jutsu
+## 🏗️ Database Operations
 
-### 🎨 Creating Your First Database Kingdom
+### 🎨 Creating Your Database Canvas
+
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white;">
 
 ```sql
--- 🏰 Summon a new database realm!
+-- 🎪 Create a new database kingdom
 CREATE DATABASE librarydb;
 ```
 
-> *"With this spell, you've created a new digital kingdom where your data will live happily ever after!"* 🏰✨
+</div>
 
-**Extra Spell Examples:**
+**More Creative Examples:**
+
+<table>
+<tr>
+<td>
+
 ```sql
--- 🛍️ E-commerce Empire
-CREATE DATABASE ecommerce;
+-- 🛍️ E-Commerce Empire
+CREATE DATABASE ecommerce_hub;
+```
 
+</td>
+<td>
+
+```sql
 -- 🎮 Gaming Database
-CREATE DATABASE gamedb;
-
--- 🍜 Ramen Shop Database
-CREATE DATABASE ramen_shop;
+CREATE DATABASE game_statistics;
 ```
 
-### 🔮 Entering Your Database Realm
+</td>
+<td>
 
 ```sql
--- 🚪 Open the portal to your database!
+-- 📚 Educational System
+CREATE DATABASE learning_platform;
+```
+
+</td>
+</tr>
+</table>
+
+### 🚪 Entering Your Database Realm
+
+```sql
+-- 🔓 Unlock and enter your database
 USE librarydb;
 ```
 
-> 🌟 **Remember:** You must enter your database realm before you can create tables or cast data spells!
+<div align="center">
+
+![Database Connection](https://img.shields.io/badge/Status-Connected%20to%20Database-success?style=flat-square&logo=database&logoColor=white)
+
+</div>
+
+### 👀 Viewing All Your Databases
+
+```sql
+-- 🌐 See all your digital empires
+SHOW DATABASES;
+```
+
+<details>
+<summary><b>🎭 Sample Output</b></summary>
+
+```
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| librarydb         |
+| mysql             |
+| performance_schema |
+| sys               |
++--------------------+
+```
+
+</details>
 
 ---
 
-## ⚔️ Table Mastery Techniques
+## 📊 Table Management
 
-### 📖 Creating the Sacred Books Table
+### 🏛️ Building Your First Table Structure
+
+<div style="border-left: 4px solid #3498db; padding-left: 20px; background-color: #ecf0f1; margin: 10px 0;">
 
 ```sql
--- 📚 Manifest the Books table with magical properties!
+-- 📚 Construct the mighty Books table
 CREATE TABLE Books (
     BookId INT,
     Title VARCHAR(25),
@@ -132,233 +216,407 @@ CREATE TABLE Books (
 );
 ```
 
-**Data Type Explanation:**
-- 🔢 `INT` → Numbers (like character levels!)
-- 📝 `VARCHAR(25)` → Text strings (max 25 characters, like character names!)
+</div>
 
-### 🌟 Advanced Table Creation with Primary Key Power
+### 🎯 Advanced Table with Superpowers
 
 ```sql
--- 👥 Users table with ultimate power (Primary Key)!
+-- 👥 Users table with primary key magic
 CREATE TABLE Users (
-    userId INT PRIMARY KEY,
-    username VARCHAR(30),
-    email VARCHAR(50)
+    userId INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(30) NOT NULL,
+    email VARCHAR(50) UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
-> 💫 **Primary Key Magic:** This ensures each user has a unique identifier, like each anime character has their own special power!
+<div align="center">
 
-### 🔍 Viewing Your Database Collection
+| 🔧 **Data Type** | 📝 **Description** | 🌟 **Use Case** |
+|-----------------|-------------------|-----------------|
+| `INT` | Integer numbers | IDs, counts, years |
+| `VARCHAR(n)` | Variable text (max n chars) | Names, titles, descriptions |
+| `DATE` | Date values | Birth dates, deadlines |
+| `TIMESTAMP` | Date and time | Created/updated times |
+
+</div>
+
+### 🔍 Viewing Table Structure
 
 ```sql
--- 📋 See all your database kingdoms!
-SHOW DATABASES;
+-- 🏗️ Inspect your table blueprint
+DESCRIBE Books;
+
+-- Alternative way
+SHOW COLUMNS FROM Books;
 ```
 
-### 👁️ Viewing Table Contents with Sharingan
+### 💥 Table Destruction (Handle with Care!)
+
+<div style="background-color: #ff6b6b; color: white; padding: 15px; border-radius: 8px; margin: 10px 0;">
+
+⚠️ **DANGER ZONE** ⚠️
 
 ```sql
--- 👀 See everything in the Books table!
-SELECT * FROM Books;
-
--- 🎯 Selective vision - only specific columns
-SELECT Title, Author FROM Books;
-```
-
-> 🌈 **Fun Fact:** The `*` symbol is like having omniscient eyes that see all columns at once!
-
----
-
-## 🌈 Data Manipulation Magic
-
-### 🎭 Inserting Multiple Data Spirits
-
-```sql
--- ✨ Summon multiple book spirits into your table!
-INSERT INTO Books (BookId, Title, Author, Genere, PublicationYear)
-VALUES
-(1, "shady island", "ram", "horror", 2000),
-(2, "harry potter", "JK rownling", "fantasy", 2005),
-(3, "mango man", "mc shawn", "human", 2006);
-```
-
-### 🌟 Single Data Spirit Summoning
-
-```sql
--- 🔥 Add one more epic book to your collection!
-INSERT INTO Books (BookId, Title, Author, Genere, PublicationYear)
-VALUES (4, "Inferno", "Dan Brown", "thriller", 2013);
-```
-
-### 💥 Table Destruction Jutsu (Use Carefully!)
-
-```sql
--- ⚡ DANGEROUS SPELL - Completely destroys the table!
+-- 🗑️ Completely remove the table (irreversible!)
 DROP TABLE Books;
 ```
 
-> ⚠️ **Warning:** This is like using a ultimate destructive jutsu! The table and ALL its data will be gone forever!
-
-### 🌋 Database Annihilation Technique
-
-```sql
--- 🔥 ULTIMATE DESTRUCTION - Erases entire database!
-DROP DATABASE testdb;
-```
-
-> 💀 **Extreme Caution:** This is the forbidden technique that erases an entire digital kingdom!
+</div>
 
 ---
 
-## 🎓 School Database Adventure
+## 💾 Data Operations
 
-Let's create an epic school database where students and courses live in harmony! 🏫✨
+### ✨ Inserting Multiple Records
 
-### 🏗️ Building the School Realm
+<div style="background: linear-gradient(45deg, #ff9a56, #ffad56); padding: 20px; border-radius: 10px; color: white;">
 
 ```sql
--- 🏫 Create the magical school database!
+-- 🎪 Populate your table with amazing data
+INSERT INTO Books (BookId, Title, Author, Genere, PublicationYear)
+VALUES
+(1, "Shady Island", "Ram Kumar", "Horror", 2000),
+(2, "Harry Potter", "JK Rowling", "Fantasy", 2005),
+(3, "Mango Man", "MC Shawn", "Drama", 2006),
+(4, "The Alchemist", "Paulo Coelho", "Fiction", 1988);
+```
+
+</div>
+
+### 🎯 Single Record Insertion
+
+```sql
+-- 🌟 Add one special book
+INSERT INTO Books (BookId, Title, Author, Genere, PublicationYear)
+VALUES (5, "Inferno", "Dan Brown", "Thriller", 2013);
+```
+
+### 🔍 Data Retrieval Magic
+
+<table>
+<tr>
+<th>🎨 Query Type</th>
+<th>📝 SQL Command</th>
+<th>🌟 Result</th>
+</tr>
+<tr>
+<td><b>All Data</b></td>
+<td><code>SELECT * FROM Books;</code></td>
+<td>Shows everything</td>
+</tr>
+<tr>
+<td><b>Specific Columns</b></td>
+<td><code>SELECT Title, Author FROM Books;</code></td>
+<td>Shows only title and author</td>
+</tr>
+<tr>
+<td><b>Filtered Data</b></td>
+<td><code>SELECT * FROM Books WHERE PublicationYear > 2000;</code></td>
+<td>Books after 2000</td>
+</tr>
+</table>
+
+---
+
+## 🎓 Practical Examples
+
+### 🏫 Complete School Database Project
+
+<div align="center">
+
+### 🎒 **Building a School Management System** 🎒
+
+</div>
+
+#### Step 1: 🏗️ Foundation Setup
+
+```sql
+-- 🎪 Create our educational universe
 CREATE DATABASE schooldb;
 USE schooldb;
 ```
 
-### 👨‍🎓 The Students Table - Hall of Heroes
+#### Step 2: 👨‍🎓 Students Table Creation
+
+<div style="border: 2px solid #3498db; padding: 15px; border-radius: 10px; background-color: #f8f9fa;">
 
 ```sql
--- 🌟 Create the legendary Students table!
+-- 🌟 Student information vault
 CREATE TABLE students (
-    studentId INT,
-    firstname VARCHAR(30),
-    lastname VARCHAR(30),
-    email VARCHAR(30),
-    enrollmentDate DATE
+    studentId INT PRIMARY KEY AUTO_INCREMENT,
+    firstname VARCHAR(30) NOT NULL,
+    lastname VARCHAR(30) NOT NULL,
+    email VARCHAR(50) UNIQUE,
+    enrollmentDate DATE,
+    grade DECIMAL(3,2) DEFAULT 0.00
 );
 ```
-
-### 🎌 Summoning Student Spirits
-
-```sql
--- ✨ Bring our student heroes to life!
-INSERT INTO students
-VALUES
-(1, "ram", "mishra", "ram@gmail.com", '2025-09-02'),
-(2, "jiya", "singh", "singhgmail.com", '2020-08-15'),
-(3, "Pankaj", "mishra", "misra@gmail.com", '2008-10-05'),
-(4, "jai", "rao", "rao@gmail.com", '1956-01-29');
-```
-
-### 🔍 Student Registry Inspection
-
-```sql
--- 👥 View all our amazing students!
-SELECT * FROM students;
-
--- 🎯 Advanced technique - filter by enrollment year!
-SELECT firstname, lastname FROM students
-WHERE enrollmentDate > '2010-01-01';
-```
-
-### 📚 The Courses Table - Academy Subjects
-
-```sql
--- 🎓 Create the mystical Courses table!
-CREATE TABLE course (
-    courseId INT,
-    coursename VARCHAR(20),
-    department VARCHAR(20)
-);
-```
-
-### 🌟 Course Spirit Manifestation
-
-```sql
--- ⚡ Summon powerful course spirits!
-INSERT INTO course
-VALUES
-(1, 'COMPUTER SCIENCE', 'CSE'),
-(2, 'AI-ML', 'CSE'),
-(3, 'ENGINEERING PHYSICS', 'PHYSICS');
-```
-
-### 🔮 Course Crystal Ball Vision
-
-```sql
--- 📖 See all available courses!
-SELECT * FROM course;
-
--- 🎯 Department-specific courses only!
-SELECT coursename FROM course WHERE department = 'CSE';
-```
-
----
-
-## 🌙 Summary & Final Words
-
-<div align="center">
-
-### 🌸 The SQL Master's Creed 🌸
 
 </div>
 
-> *"A true SQL master follows the path of clean code, meaningful names, and consistent practices. Remember these sacred teachings:"* 🗾
-
-| 🎭 **Principle** | 🌟 **Teaching** |
-|------------------|-----------------|
-| 📝 **Naming** | Choose names that tell a story, like epic anime titles! |
-| 🚫 **Keywords** | Avoid reserved words - they have special SQL powers! |
-| 📖 **Consistency** | Always use lowercase for cross-platform harmony! |
-| 🔄 **Workflow** | Create DB → Select DB → Create Tables → Insert Data → Query! |
-| 📅 **Dates** | Always use `'YYYY-MM-DD'` format for date magic! |
-
-### 🎨 Essential Commands Cheat Sheet
+#### Step 3: 📚 Courses Table
 
 ```sql
--- 🏗️ CREATION JUTSU
-CREATE DATABASE dbname;
-CREATE TABLE tablename (...);
-
--- 🔮 SELECTION MAGIC
-USE dbname;
-SELECT * FROM tablename;
-
--- ✨ DATA MANIPULATION
-INSERT INTO tablename VALUES (...);
-DROP TABLE tablename;
-DROP DATABASE dbname;
-
--- 👁️ INFORMATION GATHERING
-SHOW DATABASES;
+-- 📖 Academic courses catalog
+CREATE TABLE course (
+    courseId INT PRIMARY KEY AUTO_INCREMENT,
+    coursename VARCHAR(50) NOT NULL,
+    department VARCHAR(30),
+    credits INT DEFAULT 3,
+    instructor VARCHAR(50)
+);
 ```
+
+#### Step 4: 🎭 Sample Data Population
+
+<details>
+<summary><b>👥 Click to see student data insertion</b></summary>
+
+```sql
+-- ✨ Bringing our students to life
+INSERT INTO students (firstname, lastname, email, enrollmentDate, grade)
+VALUES
+('Ram', 'Mishra', 'ram@university.edu', '2025-09-02', 8.5),
+('Jiya', 'Singh', 'jiya.singh@university.edu', '2020-08-15', 9.2),
+('Pankaj', 'Mishra', 'pankaj.mishra@university.edu', '2008-10-05', 7.8),
+('Jai', 'Rao', 'jai.rao@university.edu', '1956-01-29', 8.9);
+```
+
+</details>
+
+<details>
+<summary><b>📚 Click to see course data insertion</b></summary>
+
+```sql
+-- 🎪 Academic offerings
+INSERT INTO course (coursename, department, credits, instructor)
+VALUES
+('Computer Science Fundamentals', 'CSE', 4, 'Dr. Smith'),
+('Artificial Intelligence & ML', 'CSE', 3, 'Prof. Johnson'),
+('Engineering Physics', 'Physics', 3, 'Dr. Williams'),
+('Database Systems', 'CSE', 4, 'Prof. Davis');
+```
+
+</details>
+
+#### Step 5: 🔍 Advanced Queries
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+<div style="background-color: #e8f4f8; padding: 15px; border-radius: 8px;">
+
+**🎯 Recent Students**
+```sql
+SELECT firstname, lastname, enrollmentDate
+FROM students 
+WHERE enrollmentDate > '2010-01-01'
+ORDER BY enrollmentDate DESC;
+```
+
+</div>
+
+<div style="background-color: #f0e8ff; padding: 15px; border-radius: 8px;">
+
+**🏆 Top Performers**
+```sql
+SELECT firstname, lastname, grade
+FROM students 
+WHERE grade >= 8.0
+ORDER BY grade DESC;
+```
+
+</div>
+
+</div>
+
+---
+
+## ⚡ Quick Reference
+
+### 🎪 Command Cheat Sheet
+
+<table>
+<thead>
+<tr>
+<th>🎨 Category</th>
+<th>🚀 Command</th>
+<th>📝 Description</th>
+<th>💡 Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>🏗️ Database</b></td>
+<td><code>CREATE DATABASE</code></td>
+<td>Create new database</td>
+<td><code>CREATE DATABASE myapp;</code></td>
+</tr>
+<tr>
+<td><b>🔓 Access</b></td>
+<td><code>USE</code></td>
+<td>Select database</td>
+<td><code>USE myapp;</code></td>
+</tr>
+<tr>
+<td><b>📊 Table</b></td>
+<td><code>CREATE TABLE</code></td>
+<td>Create new table</td>
+<td><code>CREATE TABLE users(...);</code></td>
+</tr>
+<tr>
+<td><b>➕ Insert</b></td>
+<td><code>INSERT INTO</code></td>
+<td>Add new data</td>
+<td><code>INSERT INTO users VALUES(...);</code></td>
+</tr>
+<tr>
+<td><b>🔍 Query</b></td>
+<td><code>SELECT</code></td>
+<td>Retrieve data</td>
+<td><code>SELECT * FROM users;</code></td>
+</tr>
+<tr>
+<td><b>👀 View</b></td>
+<td><code>SHOW</code></td>
+<td>Display information</td>
+<td><code>SHOW DATABASES;</code></td>
+</tr>
+<tr>
+<td><b>🗑️ Delete</b></td>
+<td><code>DROP</code></td>
+<td>Remove completely</td>
+<td><code>DROP TABLE users;</code></td>
+</tr>
+</tbody>
+</table>
+
+### 🌈 Data Types Guide
+
+<div align="center">
+
+| 🔧 **Type** | 💾 **Storage** | 🎯 **Perfect For** |
+|------------|---------------|-------------------|
+| `INT` | 4 bytes | User IDs, counts |
+| `VARCHAR(n)` | Variable | Names, emails |
+| `TEXT` | Variable | Long descriptions |
+| `DATE` | 3 bytes | Birthdays, deadlines |
+| `DECIMAL(m,d)` | Variable | Prices, grades |
+| `BOOLEAN` | 1 byte | True/false values |
+
+</div>
+
+---
+
+## 🎊 Summary & Best Practices
+
+<div align="center">
+
+### 🏆 **SQL Master Certification** 🏆
+
+</div>
+
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 15px; margin: 20px 0;">
+
+#### ✨ You've Learned:
+
+- ✅ **Database Creation** - Building your digital foundation
+- ✅ **Table Management** - Structuring your data perfectly  
+- ✅ **Data Operations** - CRUD operations mastery
+- ✅ **Best Practices** - Professional coding standards
+- ✅ **Real Examples** - Practical school database project
+
+</div>
+
+### 🎯 Remember The Essentials:
+
+<table>
+<tr>
+<td align="center">
+
+**🎨 Clean Code**
+<br>
+Use meaningful names
+<br>
+Follow conventions
+
+</td>
+<td align="center">
+
+**🚀 Efficiency**  
+<br>
+Optimize your queries
+<br>
+Use proper data types
+
+</td>
+<td align="center">
+
+**🔒 Safety**
+<br>
+Backup before DROP
+<br>
+Test on sample data
+
+</td>
+</tr>
+</table>
 
 ---
 
 <div align="center">
 
-### 🌈 Thank You for Your SQL Journey! 🌈
+## 🤝 Contributing
 
-*May your queries be fast, your data be clean, and your databases be forever optimized!* ⚡✨
+We love contributions! Feel free to:
 
-![Anime Thank You](https://img.shields.io/badge/ありがとうございます-Thank%20You!-ff69b4?style=for-the-badge)
+[![Fork](https://img.shields.io/badge/Fork-This%20Repo-blue?style=for-the-badge&logo=github)](https://github.com/yourusername/sql-guide/fork)
+[![Issues](https://img.shields.io/badge/Report-Issues-red?style=for-the-badge&logo=github)](https://github.com/yourusername/sql-guide/issues)
+[![Pull Requests](https://img.shields.io/badge/Submit-Pull%20Requests-green?style=for-the-badge&logo=github)](https://github.com/yourusername/sql-guide/pulls)
 
-**Happy Coding, SQL Sensei!** 🥷💻
+### 📞 Connect With Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yourprofile)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-1da1f2?style=for-the-badge&logo=twitter)](https://twitter.com/yourhandle)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:your.email@gmail.com)
+
+---
+
+### 🌟 **Thank You for Learning SQL!** 🌟
+
+*May your queries be fast and your databases be forever optimized!* ⚡
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=radical&hide_border=true" alt="GitHub Streak" width="400"/>
 
 ---
 
 <details>
-<summary>🎊 Click here for a special message!</summary>
+<summary>🎁 <b>Special Thanks Section</b></summary>
+<br>
 
 ```
-    ╔══════════════════════════════════════╗
-    ║  🌸 You've mastered the SQL basics! 🌸  ║
-    ║                                      ║
-    ║     Now go forth and create amazing  ║
-    ║         database adventures! 🚀      ║
-    ║                                      ║
-    ║           Made with 💖 and SQL       ║
-    ╚══════════════════════════════════════╝
+╔══════════════════════════════════════════════╗
+║  🎉 Congratulations on completing this guide! 🎉  ║
+║                                              ║
+║     You're now ready to build amazing       ║
+║         database-driven applications! 🚀     ║
+║                                              ║
+║  Don't forget to practice and experiment!    ║
+║         Happy coding, SQL Developer! 💻      ║
+║                                              ║
+║             Made with ❤️ and SQL             ║
+╚══════════════════════════════════════════════╝
 ```
+
+### 🏆 Your SQL Journey Badges
+
+![Beginner](https://img.shields.io/badge/✅-Database%20Beginner-brightgreen)
+![Intermediate](https://img.shields.io/badge/✅-Table%20Master-orange)
+![Advanced](https://img.shields.io/badge/✅-Query%20Expert-red)
+![Professional](https://img.shields.io/badge/🎯-SQL%20Professional-gold)
 
 </details>
+
+**⭐ Don't forget to star this repo if it helped you!**
 
 </div>
